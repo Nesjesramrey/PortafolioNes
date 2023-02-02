@@ -9,7 +9,7 @@ import {
   ListItem,
   ListItemIcon,
 } from "@mui/material";
-import { makeStyles } from "@mui/styles";
+//import { makeStyles } from "@mui/styles";
 import logo from "../images/logo.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import InfoTwoToneIcon from "@mui/icons-material/InfoTwoTone";
@@ -20,7 +20,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CancelIcon from "@mui/icons-material/Cancel";
 
 const Navbar = () => {
-  const classes = useStyles();
+  //const classes = useStyles();
   const [open, setOpen] = useState(false);
   const links = [
     {
@@ -110,77 +110,77 @@ const Navbar = () => {
   );
 };
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: "#fafafa",
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 999,
-  },
-  toolbar: {
-    display: "flex",
-    justifyContent: "flex-start",
-    alignItems: "center",
-  },
-  logo: {
-    height: "60px",
-    objectFit: "contain",
-    "&:hover": {
-      cursor: "pointer",
-    },
-  },
-  menu: {
-    [theme.breakpoints.down("xs")]: {
-      display: "none",
-    },
-    "& a": {
-      color: "#333",
-      fontSize: "1.4rem",
-      fontWeight: "bold",
-      marginLeft: theme.spacing(3),
-    },
-    "& a:hover": {
-      cursor: "pointer",
-      color: "tomato",
-      borderBottom: "3px solid tomato",
-    },
-  },
-  menuButton: {
-    display: "none",
-    [theme.breakpoints.down("xs")]: {
-      display: "block",
-      color: "tomato",
-      position: "absolute",
-      top: 0,
-      right: 10,
-    },
-  },
-  cancelicon: {
-    color: "tomato",
-    position: "absolute",
-    top: 0,
-    right: 10,
-  },
-  sidebar: {
-    width: "40vw",
-    [theme.breakpoints.down("xs")]: {
-      width: "60vw",
-    },
-    "& h5": {
-      margin: theme.spacing(10, 0, 0, 4),
-      fontSize: "1.4rem",
-      color: "#333",
-      fontWeight: "bold",
-    },
-    "& h5:hover": {
-      color: "tomato",
-      cursor: "pointer",
-    },
-  },
-  ligth: {
-    color: "#ffcc00",
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     backgroundColor: "#fafafa",
+//     top: 0,
+//     left: 0,
+//     right: 0,
+//     zIndex: 999,
+//   },
+//   toolbar: {
+//     display: "flex",
+//     justifyContent: "flex-start",
+//     alignItems: "center",
+//   },
+//   logo: {
+//     height: "60px",
+//     objectFit: "contain",
+//     "&:hover": {
+//       cursor: "pointer",
+//     },
+//   },
+//   menu: {
+//     [theme.breakpoints.down("xs")]: {
+//       display: "none",
+//     },
+//     "& a": {
+//       color: "#333",
+//       fontSize: "1.4rem",
+//       fontWeight: "bold",
+//       marginLeft: theme.spacing(3),
+//     },
+//     "& a:hover": {
+//       cursor: "pointer",
+//       color: "tomato",
+//       borderBottom: "3px solid tomato",
+//     },
+//   },
+//   menuButton: {
+//     display: "none",
+//     [theme.breakpoints.down("xs")]: {
+//       display: "block",
+//       color: "tomato",
+//       position: "absolute",
+//       top: 0,
+//       right: 10,
+//     },
+//   },
+//   cancelicon: {
+//     color: "tomato",
+//     position: "absolute",
+//     top: 0,
+//     right: 10,
+//   },
+//   sidebar: {
+//     width: "40vw",
+//     [theme.breakpoints.down("xs")]: {
+//       width: "60vw",
+//     },
+//     "& h5": {
+//       margin: theme.spacing(10, 0, 0, 4),
+//       fontSize: "1.4rem",
+//       color: "#333",
+//       fontWeight: "bold",
+//     },
+//     "& h5:hover": {
+//       color: "tomato",
+//       cursor: "pointer",
+//     },
+//   },
+//   ligth: {
+//     color: "#ffcc00",
+//   },
+// }));
 
 export default Navbar;
